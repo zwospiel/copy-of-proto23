@@ -8,7 +8,8 @@
 <body class='noselect'>
 <script> //#080521
 var dom = new Object();
-var global = new Object(); var listen = new Object();
+var global = new Object(); 
+var listen = new Object();
 var w_manager = new Object();
 var creature = new Object();
 var offline = new Object();
@@ -11361,7 +11362,7 @@ function deactivatef(f){
   }
 }
 
-global._preig=addElement(document.body,'img'); global._preig.src='ctst.png';//global._preig.crossOrigin = "Anonymous"; global._preig.src='http://127.0.0.1:8887/ctst.png'; 
+global._preig=addElement(document.body,'img'); global._preig.src='./img/ctst.png';//global._preig.crossOrigin = "Anonymous"; global._preig.src='http://127.0.0.1:8887/ctst.png'; 
 global._preic=addElement(document.body,'canvas'); global._preic_tmain=global._preic.getContext('2d');
 global._preic2=addElement(document.body,'canvas'); global._preic2_tmain=global._preic2.getContext('2d'); global._preic2.width=512; global._preic2.height = 512;
 global._preig.onload=function(){global._preic_tmain.drawImage(global._preig,0,0);global._preic2_tmain.imageSmoothingEnabled=false;;global._preic2_tmain.drawImage(global._preig,0,0,400,400)};
